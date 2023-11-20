@@ -1,2 +1,8 @@
-# SharpCoders
-Olá, seja bem-vindo ao meu repositório. Este é o meu espaço dedicado ao aprendizado e prática de programação. Aqui, você encontrará meus projetos, códigos de estudo, e experimentos relacionados a desenvolvimento de softwares. Este repositório serve como um diário do meu progresso como estudante de programação. Sinta-se à vontade para explorar meus projetos, fornecer feedback ou até mesmo colaborar em algum projeto. Vamos aprender e evoluir juntos na jornada da programação.
+# Projeto Spotify clone SharpCoders
+
+Este projeto é uma página web responsiva inspirada no design do Spotify, implementada utilizando HTML5 e CSS3. O layout é adaptável a diferentes tamanhos de tela, proporcionando uma experiência de usuário consistente em dispositivos variados.
+
+Tecnologias Utilizadas:
+HTML5
+CSS3
+Responsividade usando Media Queries
