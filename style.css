@@ -258,10 +258,8 @@ footer .logo-spotify{
     display: flex;
     flex-direction: row;
     gap: 25px;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    margin-left: 15px;
+    width: fit-content;
+    margin: 0 auto;
 }
 /* Footer do Footer kkk */
    .footer-final{
