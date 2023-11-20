@@ -1,0 +1,280 @@
+/* Reset de lei */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+/* Setando atalho para cores */
+:root{
+    --verde-padrão: #16a349;
+    --verde-fraco: #1db954;
+}
+
+/* Setando o body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(img/background-project.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+
+  /* Cabeçalho */
+header{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    height: 5em;
+    background-color: rgba(0, 0, 0, 0.584);
+  }
+.logo-spotify img{
+    height: 2.5em;
+    max-width: 90%;
+}
+header ul{
+      display: flex;
+      gap: 20px;
+  }
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    transition: all 500ms ease;
+}
+header .menu a:hover{
+    color: var(--verde-fraco);
+}
+header span{
+    color: white;
+}
+
+/* Main */
+main{
+    display: flex;
+    
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.612);
+}
+
+section{ 
+    text-align: center;
+}
+section h1, 
+section p, 
+section a{
+    color: white;
+    margin: 15px;
+}
+
+section h1{
+    font-size: 4em;
+}
+section p{
+    font-size: 0.9em;
+}
+
+section .btn{
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 2em;
+    padding: 10px 30px;
+    font-size: 0.9em;
+    background-color: var(--verde-padrão);
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+.btn:hover{
+    background: var(--verde-fraco);
+}
+/* Footer */
+
+footer{
+    background-color: black;
+    padding: 80px 0px;
+}
+.footer-container{
+    display: flex;
+    width: 70%;
+    padding: 70px 0px;
+    margin: 0px auto;
+    justify-content: space-evenly;
+}
+.menu-all{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+} 
+.footer-menu{
+    margin-right: 30px;
+}
+footer .footer-container p, a{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-container .footer-menu a{
+    transition: all 500ms ease;
+}
+.footer-menu a:hover{
+    color: var(--verde-fraco);
+}
+.footer-container .footer-menu p{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.8rem;
+}
+.footer-menu li{
+    margin-bottom: 10px;
+}
+/* Footer Redes Sociais */
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-social i{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    transition: all 500ms ease;
+}
+.footer-social i:hover{
+    color: var(--verde-fraco) !important;
+    cursor: pointer;
+}
+
+/* Footer Fim de página */
+.footer-final{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-end;
+}
+.footer-info ul{
+    display: flex;
+    gap: 15px;
+}
+.footer-info a{
+    color: #919496;
+    font-size: 0.8rem;
+}
+.footer-final .direitos .country{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+.footer-final .direitos p{
+    color: #919496;
+    font-size: 0.8rem;
+    font-weight: bold;
+    
+}
+.footer-final .direitos .country img{
+    margin-left: 10px;
+    height: auto;
+    width: 20px;
+}
+
+/* Minimamente responsivo */
+@media (max-width: 768px) {
+   /* Menu */
+    header {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        justify-content: space-around;
+        padding: 0 10px;
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.584);
+        position: absolute;
+        top: 5em;
+        width: 100%;
+    }
+    .menu span{
+        display: none;
+    }
+   
+    .menu ul {
+        padding: 20px;
+    }
+    .menu li {
+        margin-bottom: 10px;
+    }
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.9em;
+    }
+    .menu a:hover {
+        color: var(--verde-fraco);
+    }
+
+   /* Footer */
+footer  .footer-container{
+    display: grid;
+    
+}
+footer .logo-spotify{
+    display: flex;
+    position: relative;
+    max-width: 400px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;  
+    margin-top: -55px;
+}
+.menu-all {
+    display: grid;
+    max-width: 80%;
+    grid-template-columns:30% 30% 30%;
+    margin: 70px auto;
+}
+.footer-menu a{
+    margin-bottom: 10px;
+}
+.footer-social{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-left: 15px;
+}
+/* Footer do Footer kkk */
+   .footer-final{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-info ul{
+    display: block;
+}
+.footer-final .direitos{
+    display: flex;
+}
+.country{
+    margin-right: 10px;
+}
+}
