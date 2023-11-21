@@ -195,28 +195,25 @@ footer .footer-container p, a{
 @media (max-width: 768px) {
    /* Menu */
     header {
-        display: flex;
-        flex-direction: row;
+        display: grid;
         position: absolute;
-        justify-content: space-around;
         padding: 0 10px;
+        width: 100%;
+        height: auto;
+    }
+    header .logo-spotify{
+        margin-top: 20px;
+        justify-self: center;
     }
     .menu {
-        display: flex;
+        position: relative;
         align-items: center;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.584);
-        position: absolute;
-        top: 5em;
-        width: 100%;
+        margin: 10px auto;
     }
     .menu span{
         display: none;
     }
-   
-    .menu ul {
-        padding: 20px;
-    }
+    
     .menu li {
         margin-bottom: 10px;
     }
@@ -232,49 +229,39 @@ footer .footer-container p, a{
    /* Footer */
 footer  .footer-container{
     display: grid;
+    margin: 0 auto;
     
-}
+  }
 footer .logo-spotify{
-    display: flex;
-    position: relative;
-    max-width: 400px;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    display: inline-block;
+    width: fit-content;
     font-size: 1.2em;  
-    margin-top: -55px;
-}
-.menu-all {
-    display: grid;
-    max-width: 80%;
-    grid-template-columns:30% 30% 30%;
-    margin: 70px auto;
-}
-.footer-menu a{
-    margin-bottom: 10px;
-}
+    margin: -70px auto;
+  }
+
+.footer-menu{
+    margin: 40px auto;
+  }
 .footer-social{
     display: flex;
     flex-direction: row;
     gap: 25px;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    margin-left: 15px;
-}
+    width: fit-content;
+    margin: 0 auto;
+  }
+
 /* Footer do Footer kkk */
    .footer-final{
     display: flex;
     flex-wrap: wrap;
-}
+  }
 .footer-info ul{
     display: block;
-}
+  }
 .footer-final .direitos{
     display: flex;
-}
+  }
 .country{
     margin-right: 10px;
-}
+  }
 }
