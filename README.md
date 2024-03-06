@@ -6,3 +6,5 @@ Tecnologias Utilizadas:
 HTML5
 CSS3
 Responsividade usando Media Queries
+
+Acesse diretamente ao clicar no link: https://rog214.github.io/Spotify-Clone/
